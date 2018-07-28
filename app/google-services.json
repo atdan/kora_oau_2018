@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "463496917970",
+    "firebase_url": "https://car-guapgt.firebaseio.com",
+    "project_id": "car-guapgt",
+    "storage_bucket": "car-guapgt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463496917970:android:d6c0993bf4e6705e",
+        "android_client_info": {
+          "package_name": "com.example.root.quiko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463496917970-9uhmgkacq446maqo9mebhok2u8920c9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.quiko",
+            "certificate_hash": "f6c8862c0b558b9ce56d9e1359d047263812713a"
+          }
+        },
+        {
+          "client_id": "463496917970-aqm505o2qdelshn7r635hdp8s8r22bm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp7e8cufWy033NmY2vPvYDtOcaQwOz4Lw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463496917970-aqm505o2qdelshn7r635hdp8s8r22bm4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

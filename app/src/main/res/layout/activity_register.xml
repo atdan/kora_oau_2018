@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/logo_hack"
+                android:scaleType="fitCenter"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+
+                    android:id="@+id/edtPhoneSignUp"
+                    android:hint="Phone Number"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="01234567890"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="phone"
+                    android:textSize="34sp"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+
+                    android:id="@+id/edtNameSignUp"
+                    android:hint="Full Name"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atuma Daniel"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="phone"
+                    android:textSize="34sp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+
+                    android:id="@+id/edtEmailSignUp"
+                    android:hint="e-mail"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="phone"
+                    android:textSize="34sp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtPasswordSignUp"
+                    android:hint="Password"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1234"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="textPassword"
+                    android:textSize="34sp"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtAcctSignUp"
+                    android:hint="Account Number"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="phone"
+                    android:textSize="34sp"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtcvvSignUp"
+                    android:hint="CVV"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:maxLength="3"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="phone"
+                    android:textSize="34sp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtCardNoSignUp"
+                    android:hint="Card Number"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1234 1234 1234 1234"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="phone"
+                    android:textSize="34sp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtExpMnthSignUp"
+                    android:hint="Card expiry Month"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:maxLength="2"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="phone"
+                    android:textSize="34sp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtExpYrSignUp"
+                    android:hint="Card expiry Year"
+                    android:textColorHint="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:maxLength="2"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="phone"
+                    android:textSize="34sp"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btn_signUp_activity"
+                android:textColor="@android:color/white"
+                android:shadowColor="@android:color/black"
+                android:text="Sign Up"
+                android:background="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textColorHint="@android:color/white"
+                android:layout_margin="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
