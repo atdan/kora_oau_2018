@@ -40,5 +40,10 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.8.1'
 
     implementation 'com.google.firebase:firebase-database:16.0.1'
+
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+
+    implementation 'co.paystack.android:paystack:3.0.10'
+
 }
 apply plugin: 'com.google.gms.google-services'

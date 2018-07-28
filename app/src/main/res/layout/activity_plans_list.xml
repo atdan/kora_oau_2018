@@ -1,9 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PlansListActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/car_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/car_insurance_opt"
+                    />
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/car_insurance_header"
+                        android:layout_width="wrap_content"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="13dp"
+                        android:text="Car Insurance"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/car_insurance_detail"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:layout_below="@id/car_insurance_header"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="13dp"
+                        android:text="Car or auto insurance offers a driver protection against loss in case of an accident. "
+                        android:layout_marginTop="4dp"
+                        android:textColor="@android:color/white"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/health_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/house_insurance_opt"
+                    />
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/health_insurance_header"
+                        android:layout_width="wrap_content"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="13dp"
+                        android:text="House Insurance"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/health_insurance_detail"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:layout_below="@id/health_insurance_header"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="13dp"
+                        android:text="Car or auto insurance offers a driver protection against loss in case of an accident. "
+                        android:layout_marginTop="4dp"
+                        android:textColor="@android:color/white"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/house_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/car_insurance_opt"
+                    />
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/house_insurance_header"
+                        android:layout_width="wrap_content"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="13dp"
+                        android:text="Car Insurance"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/house_insurance_detail"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:layout_below="@id/house_insurance_header"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="13dp"
+                        android:text="Homeowners insurance policies are a combination of property and casualty insurance. The policy provides protection to the owner of a home against damage and theft. It also protects the homeowner from liability. "
+                        android:layout_marginTop="4dp"
+                        android:textColor="@android:color/white"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/life_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/life_insurance_opt"
+                    />
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/life_insurance_header"
+                        android:layout_width="wrap_content"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="13dp"
+                        android:text="Life Insurances"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/life_insurance_detail"
+                        android:layout_width="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:layout_below="@id/life_insurance_header"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginStart="13dp"
+                        android:text="Homeowners insurance policies are a combination of property and casualty insurance. The policy provides protection to the owner of a home against damage and theft. It also protects the homeowner from liability. "
+                        android:layout_marginTop="4dp"
+                        android:textColor="@android:color/white"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

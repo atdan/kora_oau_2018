@@ -1,4 +1,6 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -7,115 +9,291 @@
     tools:context=".ProfileActivity">
 
 
-    <RelativeLayout
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg">
+        android:layout_height="match_parent">
 
-
-        <ScrollView
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll"
                 android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_alignBottom="@+id/info_layout"
+                    android:layout_alignTop="@+id/info_layout"
+                    android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/message"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@id/info_layout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                    android:layout_marginStart="@dimen/activity_horizontal_margin"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:text="@string/app_name"
-                    android:visibility="gone" />
+                    android:background="@color/colorPrimary_30"
+                    android:orientation="vertical">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/user_profile_pic"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_below="@+id/message"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="83dp"
-                    android:elevation="15dp"
-                    android:padding="10dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/profile"
-                    app:civ_border_color="#ffffff"
-                    app:civ_border_width="5dp" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="24dp"
-                    android:elevation="12dp"
-                    android:text="Atuma Daniel"
-                    android:textColor="@android:color/background_light"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-
-
-                <android.support.v7.widget.CardView
-                    android:id="@+id/user_details"
-                    android:layout_width="350dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/user_profile_pic"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="15dp"
-                    android:elevation="25dp"
-                    app:cardCornerRadius="20dp"
-                    app:contentPadding="15dp">
+                    <TextView
+                        android:id="@+id/full_name_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_margin"
+                        android:layout_marginRight="@dimen/activity_margin"
+                        android:layout_marginTop="@dimen/activity_margin"
+                        android:gravity="center_horizontal"
+                        android:text="John Doe"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text_10"
+                        android:textStyle="bold" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_marginBottom="@dimen/activity_margin"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin"
+                        android:layout_marginLeft="@dimen/activity_margin"
+                        android:layout_marginRight="@dimen/activity_margin">
+
 
                         <TextView
-                            android:id="@+id/textView2"
-                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/post_count"
+                            android:fontFamily="sans-serif-thin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/large_text_30"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:text="nishanksamant@gmail.com"
-                            android:textAlignment="center"
-                            android:textStyle="bold" />
+                            android:layout_marginTop="@dimen/activity_margin"
+                            android:layout_marginRight="@dimen/half_activity_margin"
+                            android:layout_marginLeft="@dimen/half_activity_margin" />
+
+                        <!--<TextView-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_below="@id/post_count"-->
+                            <!--android:textAllCaps="true"-->
+                            <!--android:textSize="@dimen/regular_text"-->
+                            <!--android:text="@string/posts"-->
+                            <!--android:fontFamily="sans-serif-light"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:id="@+id/post_count_label"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingBottom="@dimen/activity_margin"-->
+                            <!--android:layout_marginTop="@dimen/activity_margin"-->
+                            <!--android:layout_marginLeft="@dimen/activity_margin"-->
+                            <!--android:layout_marginRight="@dimen/activity_margin" />-->
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:id="@+id/comments_count"
+                            android:fontFamily="sans-serif-thin"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/large_text_30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/half_activity_margin"
+                            android:layout_marginLeft="@dimen/half_activity_margin"
+                            android:layout_marginTop="@dimen/activity_margin" />
+
+                        <!--<TextView-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_below="@id/comments_count"-->
+                            <!--android:textAllCaps="true"-->
+                            <!--android:textSize="@dimen/regular_text"-->
+                            <!--android:text="@string/comments"-->
+                            <!--android:fontFamily="sans-serif-light"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:id="@+id/comments_count_label"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:paddingBottom="@dimen/activity_margin"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginRight="@dimen/activity_margin"-->
+                            <!--android:layout_marginTop="@dimen/activity_margin"-->
+                            <!--android:layout_marginLeft="@dimen/activity_margin" />-->
 
                         <View
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:layout_below="@+id/textView2"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="#EEEEEE" />
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/div"
+                            android:background="@color/white"
+                            android:layout_width="1dp"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/textView2"
-                            android:padding="10dp"
-                            android:text="I am a tech enthusiast and an extreme foodie as well who likes to explore new places."
-                            android:textAlignment="center" />
+                            android:layout_alignParentTop="true"
+                            android:layout_alignBottom="@id/comments_count"/>
                     </RelativeLayout>
 
-                </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:id="@+id/edtPhoneProfile"
+                        android:hint="Phone Number"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="phone"
+                        android:textSize="34sp"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<EditText-->
+
+                        <!--android:id="@+id/edtNamePro"-->
+                        <!--android:hint="Full Name"-->
+                        <!--android:textColorHint="@android:color/white"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=""-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:inputType="phone"-->
+                        <!--android:textSize="34sp"-->
+                        <!--/>-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+
+                        android:id="@+id/edtEmailProfile"
+                        android:hint="e-mail"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="textEmailAddress"
+                        android:textSize="34sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edtPasswordProfile"
+                        android:hint="Password"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="textPassword"
+                        android:textSize="34sp"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edtAcctProfile"
+                        android:hint="Account Number"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="number"
+                        android:textSize="34sp"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edtcvvProfile"
+                        android:hint="CVV"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:maxLength="3"
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="numberDecimal"
+                        android:textSize="34sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtCardNoProfile"
+                        android:hint="Card Number"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="numberDecimal"
+                        android:textSize="34sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edtExpMnthProfile"
+                        android:hint="Card expiry Month"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:maxLength="2"
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="phone"
+                        android:textSize="34sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edtExpYrProfile"
+                        android:hint="Card expiry Year (00)"
+                        android:textColorHint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:maxLength="2"
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="phone"
+                        android:textSize="34sp"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
             </RelativeLayout>
-        </ScrollView>
 
 
-    </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:animationCache="false"
-        android:background="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/navigation" />
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/swipe_refresh_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
 
-</RelativeLayout>
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recycler_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

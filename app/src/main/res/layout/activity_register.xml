@@ -35,7 +35,7 @@
                     android:textColorHint="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="01234567890"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:inputType="phone"
                     android:textSize="34sp"
@@ -53,9 +53,9 @@
                     android:textColorHint="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Atuma Daniel"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
-                    android:inputType="phone"
+                    android:inputType="text"
                     android:textSize="34sp"
                     />
             </android.support.design.widget.TextInputLayout>
@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimary"
-                    android:inputType="phone"
+                    android:inputType="textEmailAddress"
                     android:textSize="34sp"
                     />
             </android.support.design.widget.TextInputLayout>
@@ -83,7 +83,7 @@
                     android:textColorHint="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1234"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:inputType="textPassword"
                     android:textSize="34sp"
@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textColor="@color/colorPrimary"
-                    android:inputType="phone"
+                    android:inputType="number"
                     android:textSize="34sp"
                     />
 
@@ -115,10 +115,10 @@
                     android:textColorHint="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="000"
+                    android:text=""
                     android:maxLength="3"
                     android:textColor="@color/colorPrimary"
-                    android:inputType="phone"
+                    android:inputType="numberDecimal"
                     android:textSize="34sp"
                     />
             </android.support.design.widget.TextInputLayout>
@@ -132,9 +132,9 @@
                     android:textColorHint="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1234 1234 1234 1234"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
-                    android:inputType="phone"
+                    android:inputType="numberDecimal"
                     android:textSize="34sp"
                     />
             </android.support.design.widget.TextInputLayout>
@@ -147,7 +147,7 @@
                     android:textColorHint="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="00"
+                    android:text=""
                     android:maxLength="2"
                     android:textColor="@color/colorPrimary"
                     android:inputType="phone"
@@ -159,11 +159,11 @@
                 android:layout_height="wrap_content">
                 <EditText
                     android:id="@+id/edtExpYrSignUp"
-                    android:hint="Card expiry Year"
+                    android:hint="Card expiry Year (00)"
                     android:textColorHint="@android:color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="00"
+                    android:text=""
                     android:maxLength="2"
                     android:textColor="@color/colorPrimary"
                     android:inputType="phone"

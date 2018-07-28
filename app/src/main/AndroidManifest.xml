@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.root.quiko">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -27,7 +28,11 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PlansListActivity"></activity>
+        <activity android:name=".PlansListActivity" />
+        <activity
+            android:name=".CarDetailActivity"
+            android:label="@string/title_activity_car_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
